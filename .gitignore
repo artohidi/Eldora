@@ -1,0 +1,7 @@
+*.py[co]
+.env
+env/
+statics/
+*sw[pomn]
+.idea/
+hafez/settings.py

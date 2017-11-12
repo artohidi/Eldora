@@ -4,8 +4,9 @@ from .models import UserInformation
 
 class AdminUserInformation(admin.ModelAdmin):
     list_display = (
-        'id', 'user_id', 'changed_username', 'changed_first_name', 'changed_last_name', 'phone_number', 'start', 'rate')
-    readonly_fields = ["user_id", "username", "first_name", "last_name", "phone_number", "start", "rate"]
+        'id', 'user_id', 'changed_username', 'changed_first_name', 'changed_last_name', 'phone_number', 'start', 'rate',
+        'state')
+    readonly_fields = ["user_id", "username", "first_name", "last_name", "phone_number", "start", "rate", "state"]
     ordering = ('id', 'rate')
 
     def changed_username(self, obj):

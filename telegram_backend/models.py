@@ -16,7 +16,9 @@ class UserInformation(models.Model):
     createdTime = models.DateTimeField(auto_now_add=True, verbose_name="زمان ایجاد")
     changedTime = models.DateTimeField(auto_now=True, verbose_name="آخرین تغییر")
     rate = models.CharField(max_length=10, verbose_name="امتیاز", default="0")
-    start = models.CharField(max_length=10, verbose_name="شروع مسابقه", default="شروع نکرده")
+    start = models.CharField(max_length=100, verbose_name="شروع مسابقه", default="شروع نکرده")
+    state = models.CharField(max_length=100, verbose_name="موقعیت در ربات", default="شروع")
+    phone_state = models.CharField(max_length=10, verbose_name="وضعیت ثبت شماره", default="0")
 
     def __str__(self):
         return str(self.user_id)

@@ -135,13 +135,13 @@ def message_handler(bot, update):
 
         elif message == "کاتالوگ فنی":
             set_user_state(chat_id, "کاتالوگ فنی")
-            bot.forward_message(chat_id=chat_id, from_chat_id=79733373, message_id=18)
+            bot.forward_message(chat_id=chat_id, from_chat_id=79733373, message_id=1687)
         elif message == "ليست محصولات":
             set_user_state(chat_id, "لیست محصولات")
-            bot.forward_message(chat_id=chat_id, from_chat_id=79733373, message_id=185)
+            bot.forward_message(chat_id=chat_id, from_chat_id=79733373, message_id=1684)
         elif message == "آشنايی با محصولات جديد":
             set_user_state(chat_id, "آشنایی با محصولات جدید")
-            bot.forward_message(chat_id=chat_id, from_chat_id=79733373, message_id=185)
+            bot.forward_message(chat_id=chat_id, from_chat_id=79733373, message_id=1679)
         elif message == "آشنايي با کارت اصالت و هدايا":
             set_user_state(chat_id, "آشنایی با کارت اصالت و هدایا")
             bot.send_message(chat_id,
